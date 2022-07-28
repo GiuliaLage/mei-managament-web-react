@@ -24,7 +24,6 @@ const LoginPage = () => {
   return (
     <PageContainer>
       <SpinLoader spinning={spinning}>
-        <div style={{fontSize: '16pt', textAlign: 'center', marginBottom: '4rem'}}>Espaço MEI</div>
         <Form
           name="basic"
           labelCol={{ span: 8 }}
@@ -35,7 +34,7 @@ const LoginPage = () => {
           <Form.Item
             label="Email"
             name="email"
-            rules={[{ required: true, type:"email", message: 'Por favor insira seu email!' }]}
+            rules={[{ required: true, message: 'Por favor insira seu email!' }]}
           >
             <Input placeholder="Digite seu email" />
           </Form.Item>

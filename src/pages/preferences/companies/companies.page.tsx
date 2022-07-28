@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { openNotification } from '../../../utils/notification';
 import { registerCompany } from '../../../api/companies/companies.provider';
 import { format } from 'date-fns';
-import { formatDocument } from '../../../utils/format-document';
 
 //TODO: Colocar mascara no input de CPNJ
 //TODO: Paginação vinda do servidor
@@ -28,7 +27,6 @@ const CompaniesPage: React.FC = () => {
       title: 'CNPJ',
       dataIndex: 'cnpj',
       key: 'cnpj',
-      render: (row: any) => formatDocument(row),
     },
     {
       title: 'Empresa',
